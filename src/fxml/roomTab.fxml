@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="roomTabPage" prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RoomTab">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar>
+               <items>
+                  <Button mnemonicParsing="false" onAction="#displayNewRoomWindow" text="Room Form" />
+                  <Button fx:id="priceSheetButton" layoutX="60.0" layoutY="10.0" mnemonicParsing="false" onAction="#displayPriceSheet" text="Price Sheet" />
+               </items>
+            </ToolBar>
+            <HBox spacing="10.0">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <TextField promptText="Search Rooms" />
+                  <Button mnemonicParsing="false" text="Search" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <TableView fx:id="roomTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="roomID" prefWidth="75.0" text="RoomID" />
+          <TableColumn fx:id="roomName" prefWidth="75.0" text="Room Name" />
+            <TableColumn fx:id="luxuryOrCottage" prefWidth="75.0" text="Luxury/Cottage" />
+            <TableColumn fx:id="roomSize" prefWidth="75.0" text="Room Size" />
+            <TableColumn fx:id="patioOrForrest" prefWidth="75.0" text="Patio/Forrest" />
+            <TableColumn fx:id="oneOrTwo" prefWidth="75.0" text="One/Two" />
+            <TableColumn fx:id="price" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="extra" prefWidth="75.0" text="Extra" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+</BorderPane>
