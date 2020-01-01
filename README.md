@@ -2,7 +2,7 @@
 JavaFX Hotel Application
 
 ### Goal
-Learn Java through project based learning, by greating a GUI interface for database processing. 
+Learn Java through project based learning, by creating a GUI interface for database processing. 
 
 ### The Application
 This small standalone app will serve to assist receptionists at hotels by providing an interface to enter guest information
